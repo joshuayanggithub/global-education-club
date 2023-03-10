@@ -1,0 +1,53 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 60px;
+  height: 48px;
+}
+
+h1 {
+  padding-right: 4vw;
+}
+
+.nav-button {
+  all: unset;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  background-color: #D1F1D0;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #8597EF;
+}
+
+.vector-button {
+  all: unset;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  background-color: #D1F1D0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.Hero-Image {
+  width: 30vw;
+}
+
+.Hero {
+  display: flex;
+  padding: 1vh;
+  align-items: center;
+}
+
+.left-hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-hero {
+  margin: auto;
+}/*# sourceMappingURL=Navbar.css.map */
