@@ -6,6 +6,7 @@ export const Hero = () => {
     <div className='Hero'>
       <div className='left-hero'>
           <img classname="vector" src="/hero-vector.svg" alt="vector" />
+          <h1 className='vector-text'>We love tutoring and teaching kids for education and for fun!</h1>
         <button className="vector-button" >Sign Up!</button>
       </div>
       <div className='right-hero'>

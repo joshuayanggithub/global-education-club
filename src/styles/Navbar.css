@@ -1,8 +1,13 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 14px 0 14px 0;
+  margin: 3vh 0 3vh 0;
 }
 
 .logo {
@@ -78,22 +83,21 @@ button:hover {
   display: flex;
   padding: 1vh;
   align-items: center;
-}
-
-.blob {
-  position: relative;
-}
-
-.blob p {
-  position: absolute;
-  bottom: 50%;
-  right: 50%;
+  height: 85vh;
 }
 
 .left-hero {
   display: flex;
   flex-direction: column;
   position: relative;
+}
+
+.vector-text {
+  position: absolute;
+  bottom: 30%;
+  width: 35%;
+  font-family: "Ranga", cursive;
+  left: 30%;
 }
 
 .right-hero {
