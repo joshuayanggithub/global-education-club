@@ -1,45 +1,84 @@
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 14px 0 14px 0;
 }
 
 .logo {
-    width: 60px;
-    height: 48px;
+    height: 44px;
+    margin-left: 1vw;
 }
 
-$nav-padding: 4vw;
+$nav-padding: 2vw;
 $light-green: #D1F1D0;
 $light-blue: #8597EF;
 
-h1 {
-    padding-right: $nav-padding;
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    margin: 0 $nav-padding 0  $nav-padding;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: medium;
+    position: relative;
+}
+
+.nav-links .normal-links::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    position: absolute;
+    display: block;
+    background-color: #000000;
+
+    transform: scaleX(0);
+}
+
+.nav-links .normal-links:hover::before {
+    transform: scaleX(1);
+    transition: transform 0.3s ease;
+}
+
+
+a:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
 }
 
 .nav-button {
     all: unset;
-    padding-left: $nav-padding;
-    padding-right: $nav-padding;
+    padding: 0.5vw 1vw 0.5vw 1vw;
     background-color: $light-green;
     border-radius: 5px;
 
 }
 
 button:hover {
-    background-color: $light-blue;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
 }
 
 .vector-button {
     all: unset;
-    padding-left: $nav-padding;
-    padding-right: $nav-padding;
+    font-family: 'Racing Sans One', cursive;
+    text-transform: uppercase;
     background-color: $light-green;
     border-radius: 5px;
     text-align: center;
-}
-
-.Hero-Image {
-    width: 30vw;
+    margin: auto;
+    padding: 2vh 3vw 2vh 3vw;
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
 }
 
 .Hero {
@@ -48,10 +87,34 @@ button:hover {
     align-items: center;
 }
 
+.blob {
+    position: relative;
+}
+
+.blob p {
+    position: absolute;
+    bottom: 50%;
+    right:50%;
+}
+
 .left-hero {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .right-hero {
     margin: auto;
+    position: relative;
+}
+
+.Hero-Image {
+    width: 30vw;
+}
+
+.right-hero .svg-rectangle {
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    z-index: -2;
+    width: 100%;
 }
