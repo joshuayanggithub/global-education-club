@@ -1,24 +1,22 @@
-html, body {
-    margin: 0;
-    height: 100%;
-
-}
+$nav-padding: 2vw;
+$light-green: #D1F1D0;
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 3vh 0 3vh 0;
+    padding: 3vh 0 3vh 0;
 }
 
 .logo {
     height: 44px;
-    margin-left: 1vw;
+    padding: 0 2vw 0 2vw;
 }
 
-$nav-padding: 2vw;
-$light-green: #D1F1D0;
-$light-blue: #8597EF;
+.logo-wrapper {
+    padding: 0;
+    margin: 0;
+}
 
 .nav-links {
     display: flex;
@@ -30,19 +28,22 @@ $light-blue: #8597EF;
     text-decoration: none;
     color: #000000;
     font-family: 'Poppins', sans-serif;
-    font-weight: 300;
+    font-weight: bold;
     text-transform: uppercase;
-    font-size: medium;
     position: relative;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
 }
 
 .nav-links .normal-links::before {
     content: "";
     width: 100%;
     height: 2px;
-    bottom: -5px;
-    left: 0;
     position: absolute;
+    top: 3vh;
     display: block;
     background-color: #000000;
 
@@ -54,75 +55,15 @@ $light-blue: #8597EF;
     transition: transform 0.3s ease;
 }
 
-
-a:hover {
-    transform: scale(1.1);
-    transition: all .2s ease-in-out;
-}
-
 .nav-button {
     all: unset;
     padding: 0.5vw 1vw 0.5vw 1vw;
     background-color: $light-green;
-    border-radius: 5px;
+    border-radius: 1vh;
 
 }
 
-button:hover {
+.nav-button button:hover {
     transform: scale(1.1);
     transition: all .2s ease-in-out;
 }
-
-.vector-button {
-    all: unset;
-    font-family: 'Racing Sans One', cursive;
-    text-transform: uppercase;
-    background-color: $light-green;
-    border-radius: 5px;
-    text-align: center;
-    margin: auto;
-    padding: 2vh 3vw 2vh 3vw;
-    position: absolute;
-    bottom: 2px;
-    left: 50%;
-}
-
-.Hero {
-    display: flex;
-    padding: 1vh;
-    align-items: center;
-    height: 85vh;
-
-}
-
-.left-hero {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.vector-text {
-    position: absolute;
-    bottom: 30%;
-    width: 35%;
-    font-family: 'Ranga', cursive;
-    left:30%;
-}
-
-.right-hero {
-    margin: auto;
-    position: relative;
-}
-
-.Hero-Image {
-    width: 30vw;
-}
-
-.right-hero .svg-rectangle {
-    position: absolute;
-    bottom: -20px;
-    left: 20px;
-    z-index: -2;
-    width: 100%;
-}
-

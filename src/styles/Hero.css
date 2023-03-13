@@ -1,0 +1,49 @@
+.vector-button {
+  text-transform: uppercase;
+  background-color: #D1F1D0;
+  border-radius: 5px;
+  border-color: transparent;
+  text-align: center;
+  margin: auto;
+  padding: 2vh 3vw 2vh 3vw;
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+}
+
+.Hero {
+  display: flex;
+  padding: 1vh 0 1vh 0;
+  align-items: center;
+  height: 85vh;
+}
+
+.left-hero {
+  position: relative;
+  margin: auto;
+}
+
+.vector-text {
+  position: absolute;
+  bottom: 30%;
+  width: 35%;
+  font-family: "Ranga", cursive;
+  left: 30%;
+}
+
+.right-hero {
+  margin: auto;
+  position: relative;
+}
+
+.Hero-Image {
+  width: 40vw;
+}
+
+.right-hero .svg-rectangle {
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  z-index: -2;
+  width: 100%;
+}/*# sourceMappingURL=Hero.css.map */

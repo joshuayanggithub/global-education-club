@@ -1,5 +1,6 @@
 import React from 'react'
 import '/Rectangle.svg';
+import '/src/styles/Hero.css'
 
 export const Hero = () => {
   return (
