@@ -1,0 +1,10 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+}
+
+.footer-text {
+  font-family: "Poppins", sans-serif;
+  font-size: smaller;
+}/*# sourceMappingURL=Footer.css.map */

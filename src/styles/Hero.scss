@@ -1,18 +1,5 @@
 $light-green: #D1F1D0;
-$light-blue: #8597EF;
-
-.vector-button {
-    text-transform: uppercase;
-    background-color: $light-green;
-    border-radius: 5px;
-    border-color: transparent;
-    text-align: center;
-    margin: auto;
-    padding: 2vh 3vw 2vh 3vw;
-    position: absolute;
-    bottom: 2px;
-    left: 50%;
-}
+$light-blue: #CFE1FC;;
 
 .Hero {
     display: flex;
@@ -24,19 +11,52 @@ $light-blue: #8597EF;
 .left-hero {
     position: relative;
     margin: auto;
-}
-
-.vector-text {
-    position: absolute;
-    bottom: 30%;
-    width: 35%;
-    font-family: 'Ranga', cursive;
-    left:30%;
+    width: 50%;
 }
 
 .right-hero {
     margin: auto;
     position: relative;
+    width: 50%;
+}
+
+.hero-vector {
+    width: 100%;
+}
+
+.call-to-action {
+    width: 100%;
+    position: relative;
+
+}
+
+.vector-text {
+    position: absolute;
+    top:20%;
+    left: 20%;
+    height: 40%;
+    font-size: clamp(0.8rem, 3vw, 2rem);
+    font-family: 'Prata', serif;
+    margin: 0;
+    padding: 0;
+}
+.vector-button {
+    text-transform: uppercase;
+    background-color: $light-green;
+    border-radius: 3rem;
+    border-color: transparent;
+    text-align: center;
+    margin: auto;
+    padding: 2vh 3vw 2vh 3vw;
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    cursor: pointer;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+.vector-button:hover {
+    animation: bounce 1.5s;
 }
 
 .Hero-Image {
@@ -49,5 +69,9 @@ $light-blue: #8597EF;
     left: 20px;
     z-index: -2;
     width: 100%;
+}
+
+.svg-rectangle {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 
