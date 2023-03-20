@@ -4,6 +4,7 @@
   -moz-column-gap: 2rem;
        column-gap: 2rem;
   height: 50vh;
+  margin: 4rem 0 4rem 0;
 }
 
 .overview div {
