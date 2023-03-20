@@ -27,19 +27,25 @@ $light-blue: #CFE1FC;;
 .call-to-action {
     width: 100%;
     position: relative;
+}
+
+.vector-text-wrapper {
+    position: absolute;
+    top:50%;
+    left:60%;
+    width: 60%;
+    transform: translate(-50%, -50%);
 
 }
 
 .vector-text {
-    position: absolute;
-    top:20%;
-    left: 20%;
-    height: 40%;
-    font-size: clamp(0.8rem, 3vw, 2rem);
+    font-size: clamp(0.8rem, 3vw, 2.5rem);
     font-family: 'Prata', serif;
+    font-weight: 300;
     margin: 0;
     padding: 0;
 }
+
 .vector-button {
     text-transform: uppercase;
     background-color: $light-green;
