@@ -19,7 +19,7 @@ export const Overview = () => {
         <p>
           Every week, our high school volunteers, currently on Wednesdays during high-school club time from 3:25 to 4:10 PM, we tutor kids on various subjects or help them out with schoolwork!
         </p>
-        <FaHandsHelping size={60}  color="#f3d945"/>
+        <FaHandsHelping size={60}  color="#f3d945" />
       </div>
       <div className='projects'>
         <h1>Other Projects</h1>

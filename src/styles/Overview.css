@@ -26,4 +26,20 @@
   font-size: clamp(0.875rem, 2vw, 1.5rem);
   font-weight: 200;
   text-align: center;
+}
+
+.overview div svg {
+  animation: float 1.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-12px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }/*# sourceMappingURL=Overview.css.map */
