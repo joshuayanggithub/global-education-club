@@ -1,5 +1,28 @@
 .overview {
   display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  height: 50vh;
+}
+
+.overview div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overview div h1 {
+  font-size: clamp(1rem, 3vw, 3rem);
+  text-align: center;
+  font-weight: 300;
+  font-family: "Prata", serif;
+}
+
+.overview div p {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(0.875rem, 2vw, 1.5rem);
+  font-weight: 200;
+  text-align: center;
 }/*# sourceMappingURL=Overview.css.map */
