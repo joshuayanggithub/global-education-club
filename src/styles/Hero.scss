@@ -64,6 +64,7 @@ $light-blue: #CFE1FC;;
 .call-to-action {
     display: inline-block;
     position: relative;
+
 }
 
 .vector-button {
@@ -86,6 +87,7 @@ $light-blue: #CFE1FC;;
 
     cursor: pointer;
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+    animation: float 1.5s ease-in-out infinite;
 }
 
 .vector-button:hover {
@@ -110,4 +112,31 @@ $light-blue: #CFE1FC;;
 .svg-rectangle {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
+
+@keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-4px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+}
+
+@keyframes floatless {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-3px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+  
+
+  
 
