@@ -87,7 +87,7 @@ $light-blue: #CFE1FC;;
 
     cursor: pointer;
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
-    animation: float 1.5s ease-in-out infinite;
+    animation: jump-shaking 2s ease-in-out infinite;
 }
 
 .vector-button:hover {
@@ -137,6 +137,14 @@ $light-blue: #CFE1FC;;
     }
   }
   
-
+@keyframes jump-shaking {
+    0% { transform: translateX(0) }
+    15% { transform: translateY(-4px) }
+    35% { transform: translateY(-4px) rotate(12deg) }
+    55% { transform: translateY(-4px) rotate(-11deg) }
+    65% { transform: translateY(-4px) rotate(12deg) }
+    75% { transform: translateY(-4px) rotate(-11deg) }
+    100% { transform: translateY(0) rotate(0) }
+}
   
 
