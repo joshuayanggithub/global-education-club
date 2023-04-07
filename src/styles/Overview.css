@@ -1,35 +1,71 @@
 .overview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8rem 0 5rem 0;
+  position: relative;
+}
+
+.plane {
+  position: absolute;
+  width: 20%;
+  top: 10%;
+  left: 0%;
+  transform: translate(0, -50%);
+}
+
+.overview h1 {
+  font-family: "Prata", serif;
+  font-size: clamp(2rem, 4vw, 4rem);
+  margin: 0.25rem;
+}
+
+.overview p {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(0.625rem, 2vw, 1.25rem);
+  font-weight: 100;
+}
+
+.three-column {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-evenly;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
   height: 50vh;
   margin: 4rem 0 4rem 0;
 }
 
-.overview div {
+.three-column div {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-around;
+  border-style: solid;
+  border-width: 0.625rem;
+  border-color: #6e79ad;
+  border-radius: 10px;
 }
 
-.overview div h1 {
-  font-size: clamp(1rem, 3vw, 3rem);
+.three-column div:hover {
+  animation: float 1.5s ease-in-out infinite;
+  border-color: #4857a1;
+  transition: all 1s ease;
+}
+
+.three-column div h1 {
+  font-size: clamp(1rem, 3vw, 2rem);
   text-align: center;
   font-weight: 300;
   font-family: "Prata", serif;
 }
 
-.overview div p {
+.three-column div p {
   font-family: "Montserrat", sans-serif;
-  font-size: clamp(0.875rem, 2vw, 1.5rem);
+  font-size: clamp(0.625rem, 2vw, 1.25rem);
   font-weight: 200;
   text-align: center;
-}
-
-.overview div svg {
-  animation: float 1.5s ease-in-out infinite;
+  margin: 0.25rem;
 }
 
 @keyframes float {
@@ -37,9 +73,20 @@
     transform: translatey(0px);
   }
   50% {
-    transform: translatey(-12px);
+    transform: translatey(-20px);
   }
   100% {
     transform: translatey(0px);
+  }
+}
+@keyframes border-change {
+  0% {
+    border-color: #a6afdc;
+  }
+  50% {
+    border-color: #a7aed2;
+  }
+  100% {
+    border-color: #6775B9;
   }
 }/*# sourceMappingURL=Overview.css.map */
