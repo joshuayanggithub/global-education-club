@@ -5,7 +5,7 @@ export const Tutoring = () => {
   return (
     <section id='Tutoring' className='Tutoring'>
       <div className='tutoring-info'>
-        <h1>Our Tutoring Program</h1>
+        <h1>Our <h1 className='emph'>Tutoring</h1> <strong>Program</strong></h1>
         <h2>Why Choose Us?</h2>
         <p>
           As high school volunteers, we have all shared the struggles of falling behind in schoolwork or understanding everything that is taught in class without having the support or time to catch up to the teacher. It's nice for us to help our younger classmates for a change, so that we can give the help or simply company they want/need!

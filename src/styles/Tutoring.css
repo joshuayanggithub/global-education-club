@@ -1,7 +1,8 @@
 .Tutoring {
   display: flex;
   justify-content: center;
-  margin: 5rem 0 5rem 0;
+  background-color: #f6f8ff;
+  padding: 4rem 0 4rem 0;
 }
 
 .tutoring-info {
@@ -18,6 +19,11 @@
   font: bold;
   margin-top: 0;
   margin-bottom: 1.5vh;
+}
+
+.emph {
+  color: #9bd799;
+  display: inline;
 }
 
 .tutoring-info h2 {
@@ -50,7 +56,7 @@
 }
 
 .tutoring-pictures img {
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 .tutoring-caption {
@@ -65,4 +71,30 @@
   margin: 0;
   font-size: clamp(0.5rem, 2vw, 0.875rem);
   text-transform: uppercase;
+}
+
+strong {
+  position: relative;
+}
+strong::after {
+  content: "";
+  position: absolute;
+  bottom: -0.125rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  height: 0.75rem;
+  z-index: 1;
+  background-image: url("/public/underline.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p > strong {
+  font-weight: 400;
+}
+p > strong::after {
+  bottom: -0.2rem;
+  height: 0.5rem;
+  left: -0.25rem;
+  right: -0.25rem;
 }/*# sourceMappingURL=Tutoring.css.map */

@@ -1,39 +1,94 @@
 .Reading {
   display: flex;
   justify-content: center;
+  background-color: #f6f8ff;
+  padding: 4rem 0 10rem 0;
+  position: relative;
 }
 
-.left-reading {
+.reading-info {
+  width: 20%;
   display: flex;
   flex-direction: column;
-  width: 30%;
+  padding: 0.5em 2em 0.5em 0;
 }
 
-.reading-title {
+.reading-info h1 {
   font-family: "Prata", "serif";
-}
-
-.little-library h2 {
-  text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 3vw, 2.125rem);
   font-weight: 700;
+  margin-bottom: 1.5vh;
+}
+
+.reading-emph {
   color: #6775B9;
+  display: inline;
 }
 
-.little-library p {
+.reading-info h2 {
   font-family: "Montserrat", "sans-serif";
+  font-size: 1.125rem;
+  font-weight: 700;
+  font: bold;
+  color: #7dc07b;
+  text-transform: uppercase;
+  margin: 1.5vh 0 1.5vh 0;
 }
 
-.right-reading {
+.reading-info p {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 1rem;
+  margin: 1.5vh 0 1.5vh 0;
+}
+
+.zoom-container {
+  display: flex;
+  padding-top: 3rem;
+  align-items: start;
+  width: 65%;
+}
+
+.reading-pictures {
   display: flex;
   flex-direction: column;
-  width: 60%;
-}
-
-.right-reading img {
+  justify-content: space-between;
   width: 100%;
 }
 
-.right-reading p {
+.reading-pictures img {
+  border-radius: 50px;
+}
+
+.reading-caption {
+  display: flex;
+  padding: 0.5em;
+  justify-content: space-between;
+}
+
+.reading-caption h3 {
   font-family: "Montserrat", "sans-serif";
+  font-weight: 300;
+  margin: 0;
+  font-size: clamp(0.5rem, 2vw, 0.875rem);
+  text-transform: uppercase;
+}
+
+.bottom-curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.bottom-curve svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 151px;
+}
+
+.bottom-curve .shape-fill {
+  fill: #FFFFFF;
 }/*# sourceMappingURL=Reading.css.map */

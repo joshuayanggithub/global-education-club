@@ -3,7 +3,7 @@ $light-blue: #CFE1FC;;
 
 .Hero {
     display: flex;
-    padding: 1vh 0 1vh 0;
+    padding: 1rem; 
     align-items: center;
     justify-content: space-between;
     height: 85vh;
@@ -19,7 +19,7 @@ $light-blue: #CFE1FC;;
     width: 40%;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 800px){
     .Hero {
         flex-direction: column;
         align-items: unset;
@@ -30,6 +30,7 @@ $light-blue: #CFE1FC;;
         display: inline-block;
         width: 60%;
         margin-left: 4%;
+        margin-bottom: 5%;
     }
     .right-hero {
         display: inline-block;
@@ -145,6 +146,4 @@ $light-blue: #CFE1FC;;
     65% { transform: translateY(-4px) rotate(12deg) }
     75% { transform: translateY(-4px) rotate(-11deg) }
     100% { transform: translateY(0) rotate(0) }
-}
-  
-
+} 

@@ -1,16 +1,39 @@
+$light-green: #D1F1D0;
+$light-blue: #CFE1FC;
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.wave .shape-fill {
+    fill: #FFFFFF;
+}
 
 .overview{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 8rem 0 5rem 0;
+    margin: 8rem 0 0rem 0;
+    padding: 10rem 0;
     position: relative;
+    background-color: #D1F1D0;
 }
 
 .plane {
     position: absolute;
     width: 20%;
-    top:10%;
+    top:30%;
     left: 0%;
     transform: translate(0, -50%);
 }
@@ -33,7 +56,7 @@
     justify-content: space-evenly;
     column-gap: 1.5rem;
     height: 50vh;
-    margin: 4rem 0 4rem 0;
+    margin: 4rem;
 }
 
 .three-column div {
@@ -43,28 +66,31 @@
     justify-content: space-around;
 
     border-style: solid;
+    background-color: #eaeef3;
+    border-color: #9db0cd;
     border-width: 0.625rem;
-    border-color: #6e79ad;
-    border-radius: 10px;
+    border-radius: 30px;
  }
 
  .three-column div:hover {
     animation: float 1.5s ease-in-out infinite;
-    border-color: #4857a1;
+    border-color: #9dd29b;
     transition: all 1s ease;
-}
+ }
 
 .three-column div h1 {
     font-size: clamp(1rem, 3vw , 2rem);
     text-align: center;
-    font-weight: 300;
-    font-family: 'Prata', serif;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #9dd29b;
+    text-transform: uppercase;
 }
 
 .three-column div p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: clamp(0.625rem, 2vw , 1.25rem);
-    font-weight: 200;
+    font-family: 'Prata', serif;
+    font-size: clamp(0.625rem, 2vw , 1rem);
+    font-weight: 100;
     text-align: center;
     margin: 0.25rem;
 }
@@ -95,4 +121,24 @@
     }
   }
   
-  
+.wave-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 8rem;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+.wave-bottom .shape-fill {
+    fill: #f6f8ff;
+}

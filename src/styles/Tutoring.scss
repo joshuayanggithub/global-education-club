@@ -3,7 +3,8 @@ $tutoring-margin: 1.5vh;
 .Tutoring {
     display: flex;
     justify-content: center;
-    margin: 5rem 0 5rem 0;
+    background-color: #f6f8ff;
+    padding: 4rem 0 4rem 0;
 }
 
 .tutoring-info {
@@ -21,6 +22,11 @@ $tutoring-margin: 1.5vh;
     font: bold;
     margin-top: 0;
     margin-bottom: $tutoring-margin;
+}
+
+.emph {
+    color: #9bd799;
+    display: inline;
 }
 
 .tutoring-info h2 {
@@ -56,7 +62,7 @@ $tutoring-margin: 1.5vh;
 }
 
 .tutoring-pictures img{
-    border-radius: 10px;
+    border-radius: 50px;
 }
 
 .tutoring-caption{
@@ -73,3 +79,44 @@ $tutoring-margin: 1.5vh;
 
     text-transform: uppercase;
 }
+
+strong {
+    position: relative;
+  
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -0.125rem;
+      left: -0.5rem;
+      right: -0.5rem;
+      height: 0.75rem;
+  
+      // Position the line behind the text so that
+      // it is still easily readable
+      z-index: 1;
+  
+      // The SVG is added as an SVG background image
+      background-image: url('/public/underline.svg');
+      background-repeat: no-repeat;
+  
+      // This allows the SVG to flex in size to fit
+      // any length of word. If the word is short,
+      // the SVG will be stretched vertically, if it
+      // is long, the SVG will be stretched horizontally.
+      // The jagged nature of this particular SVG works
+      // with this transforming.
+      background-size: cover;
+    }
+  }
+  
+  p > strong {
+    font-weight: 400;  
+  
+    &::after {
+      // Specific positioning for smaller text
+      bottom: -0.2rem;
+      height: 0.5rem;
+      left: -0.25rem;
+      right: -0.25rem;
+    }
+  }
