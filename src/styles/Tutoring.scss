@@ -1,0 +1,75 @@
+$tutoring-margin: 1.5vh;
+
+.Tutoring {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0 5rem 0;
+}
+
+.tutoring-info {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 2em 0.5em 0;
+}
+
+.tutoring-info h1 {
+    font-family: 'Prata', 'serif';
+    font-size: clamp(1rem,3vw,2.125rem);
+    font-weight: 700;
+
+    font: bold;
+    margin-top: 0;
+    margin-bottom: $tutoring-margin;
+}
+
+.tutoring-info h2 {
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 1.125rem;
+    font-weight: 700;
+    font: bold;
+    color: #6775B9;
+
+    text-transform: uppercase;
+
+    margin: $tutoring-margin 0 $tutoring-margin 0;
+}
+
+.tutoring-info p {
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 1rem;
+
+    margin: $tutoring-margin 0 $tutoring-margin 0;
+}
+
+.picture-container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.tutoring-pictures {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.tutoring-pictures img{
+    border-radius: 10px;
+}
+
+.tutoring-caption{
+    display: flex;
+    padding: 0.5em;
+    justify-content: space-between;
+}
+
+.tutoring-caption h3 {
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 300;
+    margin: 0;
+    font-size: clamp(0.5rem, 2vw, 0.875rem);
+
+    text-transform: uppercase;
+}

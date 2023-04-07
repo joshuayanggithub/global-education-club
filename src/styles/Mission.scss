@@ -1,0 +1,52 @@
+
+.Mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 5rem 0 5rem 0;
+}
+
+.Mission .mission-title {
+    font-family: 'Prata', 'serif';
+    font-size: 3rem;
+}
+
+.mission-writing{
+    font-family: 'Montserrat', 'sans-serif';
+    display: flex;
+    justify-content: space-between;
+
+    width: 75%;
+    gap: 4rem;
+}
+
+.mission-left {
+    width: 35%;
+}
+
+.mission-writing .mission-right {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.mission-writing h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #90c28e;
+}
+
+.mission-writing p {
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+.Mission img {
+    width: 80%;
+    height: 10%;
+    margin: 2rem;
+
+    border-radius: 10px;
+}
