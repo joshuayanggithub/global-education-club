@@ -3,8 +3,14 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 3vh 0 3vh 0;
+  height: 5vh;
 }
 
+@media screen and (max-width: 990px) {
+  nav {
+    padding: 1vh 0 1vh 0;
+  }
+}
 .logo-wrapper {
   padding: 0;
   margin: auto 0 auto 0;
