@@ -1,0 +1,41 @@
+
+.Reading {
+    display: flex;
+    justify-content: center;
+}
+
+.left-reading {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.reading-title {
+    font-family: 'Prata', 'serif';
+}
+
+.little-library h2{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    color: #6775B9;
+}
+
+.little-library p {
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+.right-reading {
+    display: flex;
+    flex-direction: column;
+    width:60%;
+}
+
+.right-reading img {
+    width:100%;
+}
+
+.right-reading p {
+    font-family: 'Montserrat', 'sans-serif';
+}
