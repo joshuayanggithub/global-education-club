@@ -6,9 +6,7 @@ import {BsFillHouseHeartFill} from 'react-icons/bs'
 
 export const Overview = () => {
   return (
-    <>
-
-      <div className='overview'>
+      <section id='Overview' className='overview'>
 
         <h1>Our Programs</h1>
         <p>An overview </p>
@@ -41,7 +39,6 @@ export const Overview = () => {
             <BsFillHouseHeartFill size={60} color="#f34b45"/>
           </div>
         </div>
-      </div>
-    </>
+      </section>
   )
 }

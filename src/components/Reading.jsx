@@ -3,7 +3,7 @@ import '/src/styles/Reading.css'
 
 export const Reading = () => {
   return (
-    <section className='Reading'>
+    <section className='Reading' id='Reading'>
 
       <div className='left-reading'>
         <h1 className='reading-title'>Our Reading Program</h1>

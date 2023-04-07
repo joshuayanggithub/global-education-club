@@ -3,7 +3,7 @@ import '/src/styles/Tutoring.css'
 
 export const Tutoring = () => {
   return (
-    <section className='Tutoring'>
+    <section id='Tutoring' className='Tutoring'>
       <div className='tutoring-info'>
         <h1>Our Tutoring Program</h1>
         <h2>Why Choose Us?</h2>

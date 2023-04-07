@@ -7,7 +7,7 @@ import {BsGithub} from 'react-icons/bs'
 
 export const Footer = () => {
   return (
-    <footer className='footer'>
+    <footer id="Footer" className='footer'>
       <div className='site-review'>
         <h1 className='thank-you'>Thank you for supporting us!</h1>
 
