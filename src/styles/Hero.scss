@@ -39,6 +39,18 @@ $light-blue: #CFE1FC;;
     }
 }
 
+@media screen and (max-width: 400px){
+    .Hero {
+        gap: 10vh;
+    }
+    .left-hero {
+        width: 75%;
+    }
+    .right-hero {
+        width: 80%;;
+    }
+}
+
 .vector {
     width: 100%;
     height: 60%;
