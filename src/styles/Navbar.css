@@ -33,14 +33,14 @@ nav {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   position: relative;
-  font-size: clamp(0.5rem, 2vw, 1.625rem);
-  font-weight: 150;
+  font-size: clamp(0.65rem, 2vw, 1.625rem);
+  font-weight: 350;
 }
 
 nav a:hover {
   transform: scale(1.05);
   transition: all 0.2s ease-in-out;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 .nav-links .normal-links::before {
