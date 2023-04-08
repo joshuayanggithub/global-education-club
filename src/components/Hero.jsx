@@ -20,7 +20,7 @@ export const Hero = () => {
       </div>
 
       <div className='right-hero'>
-        <img className="Hero-Image" src="src/GEC/Wiliam.jpg"/>
+        <img className="Hero-Image" src="/William.jpg"/>
         <img className='svg-rectangle' src='/Rectangle.svg' />
       </div>
     </div>

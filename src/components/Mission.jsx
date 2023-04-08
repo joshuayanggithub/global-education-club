@@ -23,7 +23,7 @@ export const Mission = () => {
           </p>
         </div>
       </div>
-      <img src="/src/GEC/Club_Picture_Cropped.jpg" alt="Club Picture" />
+      <img src="/Club_Picture_Cropped.jpg" alt="Club Picture" />
     </section>
   )
 }

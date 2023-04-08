@@ -17,7 +17,7 @@ export const Tutoring = () => {
       </div>
       <div className='picture-container'>
         <div className='tutoring-pictures'>
-          <img src='/src/GEC/Srinitha_Tutoring.jpg'/>
+          <img src='/Srinitha_Tutoring.jpg'/>
           <div className='tutoring-caption'>
             <h3>2022/23</h3>
             <h3>Tutoring in Progress!</h3>
