@@ -9,7 +9,7 @@ export const Reading = () => {
         <h1>Our <h1 className='reading-emph'>Reading</h1> <strong>Program</strong></h1>
         <h2>The Little Library</h2>
         <p>
-          Our collection of free books online to read to our members from. Always down to add more based on request! This 22/23 year we are operating online on Zoom on Saturdays for a quick bedtime story from 7:45 to 8:25 PM!
+          Our collection of free books online to read to our members from. We are always ready to add more based on request! This Quarry Lane 22/23 year we are operating online on Zoom on Saturdays for a quick bedtime story from 7:45 to 8:25 PM!
           </p>
         <img className='library' src='/library.png' alt='little library'></img>
       </div>
@@ -19,7 +19,7 @@ export const Reading = () => {
           <img src='/Reading_Photo.jpg'/>
           <div className='reading-caption'>
             <h3>Oct. 2022</h3>
-            <h3>Reading Club Photo!</h3>
+            <h3>GEC Reading Club Photo!</h3>
           </div>
         </div>
       </div>

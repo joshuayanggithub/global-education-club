@@ -26,21 +26,21 @@ export const Overview = () => {
           <div className='reading'>
             <h1>Reading</h1>
             <p>
-              Every week, our high school volunteers, currently on Saturdays from 7:45 to 8:25 PM PST, we read books from our little library to young students K-5.
+              Every week, our QLS/GEC volunteers, currently on Saturdays from 7:45 to 8:25 PM PST, read books from our little library to young students K-5.
             </p>
             <FcReading className='overview-icon'/>
           </div>
           <div className='tutoring'>
             <h1>Tutoring</h1>
             <p>
-              Every week, our high school volunteers, currently on Wednesdays during high-school club time from 3:25 to 4:10 PM, we tutor kids on various subjects or help them out with schoolwork!
+              Every week, our Quarry Lane/GEC volunteers, currently on Wednesdays during high-school club time from 3:25 to 4:10 PM, tutor kids on various subjects & help them out with schoolwork!
             </p>
             <FaHandsHelping className='overview-icon' color="#f3d945" />
           </div>
           <div className='projects'>
             <h1>Other Projects</h1>
             <p>
-              We are always participating in local outreach or partnering with other non-profit organizations to support our mission of empowering education (ALP)!
+              We are always participating in local outreach or partnering with other non-profit organizations/ clubs to support our mission of empowering education such as ALP!
             </p>
             <BsFillHouseHeartFill className='overview-icon' color="#f34b45"/>
           </div>

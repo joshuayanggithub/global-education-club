@@ -9,17 +9,17 @@ export const Mission = () => {
         <div className='mission-left'>
             <h1>Who Are We?</h1>
             <p>
-              Originally founded by  Vivian Hir (Class of ‘2021) in 2018 to fundraise and raise awareness for KHEN Cambodia, a NGO organization that focuses on building schools in Battambang Province, the following generations of the club have since extended our goals to promote global education in general through our various programs.
+              We are the Global Education Club (GEC), founded at the Quarry Lane School by  Vivian Hir (Class of 2021) in 2018 to raise awareness for KHEN Cambodia, a NGO organization that focuses on building schools in Battambang Province. Since, then the following generations of club have  extended our goals to promote global education in general through our various programs.
             </p>
         </div>
         <div className='mission-right'>
           <h1>Building Trust</h1>
           <p>
-            It is important to compare yourself to expectations to keep yourself on track. We do exactly that with our media posts and club reminders. 
+            We have built a sizeable following on social media and also send weekly updates within our club to parents & students make sure we are doing what we are expected to follow.
           </p>
           <h1>Aim</h1>
           <p>
-            We strive to promote, develop, and educate our young peers. Quarry Lane is a tight-knit school and as high schoolers, we know the struggle of what it was once like to fall behind on school work or to feel too much stress.
+            We strive to promote, develop, and educate our young peers. Quarry Lane is a tight-knit school and as high schoolers sharing the same campus, buildings, and rooms with our younger counterparts, we are looking for ways to support others!
           </p>
         </div>
       </div>
