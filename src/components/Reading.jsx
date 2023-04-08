@@ -11,7 +11,7 @@ export const Reading = () => {
         <p>
           Our collection of free books online to read to our members from. Always down to add more based on request! This 22/23 year we are operating online on Zoom on Saturdays for a quick bedtime story from 7:45 to 8:25 PM!
           </p>
-        <img src='/src/GEC/library.png' alt='little library'></img>
+        <img className='library' src='/src/GEC/library.png' alt='little library'></img>
       </div>
 
       <div className='zoom-container'>

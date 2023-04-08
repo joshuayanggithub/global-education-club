@@ -7,13 +7,13 @@
   margin: 5rem auto 5rem auto;
   border-style: dotted;
   border-width: 3px;
-  border-radius: 10rem;
+  border-radius: 15vw;
   border-color: #90c28e;
 }
 
 .Mission .mission-title {
   font-family: "Prata", "serif";
-  font-size: 3rem;
+  font-size: clamp(1.25rem, 3.5vw, 2.5rem);
 }
 
 .mission-writing {
@@ -25,23 +25,24 @@
 }
 
 .mission-left {
-  width: 35%;
+  width: 40%;
 }
 
 .mission-writing .mission-right {
   display: flex;
   flex-direction: column;
-  width: 65%;
+  width: 60%;
 }
 
 .mission-writing h1 {
   text-transform: uppercase;
   font-weight: 800;
+  font-size: clamp(0.65rem, 1.5vw, 1.875rem);
   color: #90c28e;
 }
 
 .mission-writing p {
-  font-size: 1.125rem;
+  font-size: clamp(0.5rem, 1vw, 0.875rem);
   margin: 0;
 }
 
@@ -49,5 +50,5 @@
   width: 80%;
   height: 10%;
   margin: 2rem;
-  border-radius: 10rem;
+  border-radius: 10vw;
 }/*# sourceMappingURL=Mission.css.map */

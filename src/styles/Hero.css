@@ -3,7 +3,7 @@
   padding: 1rem;
   align-items: center;
   justify-content: space-between;
-  height: 85vh;
+  height: 80vh;
 }
 
 .left-hero {
@@ -16,12 +16,13 @@
   width: 40%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 990px) {
   .Hero {
     flex-direction: column;
     align-items: unset;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 2rem;
+    padding: 0;
   }
   .left-hero {
     display: inline-block;
@@ -37,7 +38,7 @@
 }
 @media screen and (max-width: 400px) {
   .Hero {
-    gap: 10vh;
+    gap: 8vh;
   }
   .left-hero {
     width: 75%;

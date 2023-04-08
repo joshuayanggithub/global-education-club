@@ -3,7 +3,7 @@ $reading-margin: 1.5vh;
 .Reading {
     display: flex;
     justify-content: center;
-    background-color: #f6f8ff;
+    background-color: #ebf0ff;
     padding: 4rem 0 10rem 0;
     position: relative;
 }
@@ -12,7 +12,7 @@ $reading-margin: 1.5vh;
     width: 20%;
     display: flex;
     flex-direction: column;
-    padding: 0.5em 2em 0.5em 0;
+    padding: 0.5em 2em;
 }
 
 .reading-info h1 {
@@ -30,7 +30,7 @@ $reading-margin: 1.5vh;
 
 .reading-info h2 {
     font-family: 'Montserrat', 'sans-serif';
-    font-size: 1.125rem;
+    font-size: clamp(0.65rem,1.8vw,1.5rem);
     font-weight: 700;
     font: bold;
     color: #7dc07b;
@@ -42,8 +42,11 @@ $reading-margin: 1.5vh;
 
 .reading-info p {
     font-family: 'Montserrat', 'sans-serif';
-    font-size: 1rem;
+    font-size: clamp(0.5rem,1vw,0.875rem);
+    margin: $reading-margin 0 $reading-margin 0;
+}
 
+.library {
     margin: $reading-margin 0 $reading-margin 0;
 }
 
@@ -80,6 +83,35 @@ $reading-margin: 1.5vh;
     text-transform: uppercase;
 }
 
+@media screen and (max-width: 990px){
+    .Reading {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+ 
+    .reading-info {
+         width: 70%;
+         text-align: center;
+         h2,h3 {
+            margin: 1vh 0 1vh 0;
+         }
+    }
+ 
+    .zoom-container {
+        text-align: center;
+        padding-top: 0.5rem;
+        width: 70%;
+    }
+
+    .library {
+        width: 50%;
+        margin: auto;
+    }
+ }
+ 
+
 .bottom-curve {
     position: absolute;
     bottom: 0;
@@ -93,7 +125,7 @@ $reading-margin: 1.5vh;
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 151px;
+    height: 8vh;
 }
 
 .bottom-curve .shape-fill {
