@@ -1,141 +1,146 @@
 $tutoring-margin: 1.5vh;
 
 .Tutoring {
-    display: flex;
-    justify-content: center;
-    background-color: #ebf0ff;
-    padding: 4rem 0 4rem 0;
-    z-index: 1;
+  display: flex;
+  justify-content: center;
+  background-color: #ebf0ff;
+  padding: 4rem 0 4rem 0;
+  z-index: 1;
 }
 
-
 .tutoring-info {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    padding: 0.5em 2em;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em 2em;
+
+  p {
+    b {
+      font-weight: 800;
+    }
+  }
 }
 
 .tutoring-info h1 {
-    font-family: 'Prata', 'serif';
-    font-size: clamp(1rem,3vw,2.125rem);
-    font-weight: 700;
-    z-index: 1;
+  font-family: "Prata", "serif";
+  font-size: clamp(1rem, 3vw, 2.125rem);
+  font-weight: 700;
+  z-index: 1;
 
-    font: bold;
-    margin-top: 0;
-    margin-bottom: $tutoring-margin;
+  font: bold;
+  margin-top: 0;
+  margin-bottom: $tutoring-margin;
 }
 
 .emph {
-    color: #9bd799;
-    display: inline;
+  color: #9bd799;
+  display: inline;
 }
 
 .tutoring-info h2 {
-    font-family: 'Montserrat', 'sans-serif';
-    font-size: clamp(0.65rem,1.8vw,1.5rem);
-    font-weight: 700;
-    color: #6775B9;
+  font-family: "Montserrat", "sans-serif";
+  font-size: clamp(0.65rem, 1.8vw, 1.5rem);
+  font-weight: 700;
+  color: #6775b9;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 
-    margin: $tutoring-margin 0 $tutoring-margin 0;
+  margin: $tutoring-margin 0 $tutoring-margin 0;
 }
 
 .tutoring-info p {
-    font-family: 'Montserrat', 'sans-serif';
-    font-size: clamp(0.5rem,1vw,0.875rem);
+  font-family: "Montserrat", "sans-serif";
+  font-size: clamp(0.5rem, 1vw, 0.875rem);
 
-    margin: $tutoring-margin 0 $tutoring-margin 0;
+  margin: $tutoring-margin 0 $tutoring-margin 0;
 }
 
 .picture-container {
-    display: flex;
-    align-items: center;
-    width: 50%;
+  display: flex;
+  align-items: center;
+  width: 50%;
 }
 
 .tutoring-pictures {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.tutoring-pictures img{
-    border-radius: 50px;
+.tutoring-pictures img {
+  border-radius: 50px;
 }
 
-.tutoring-caption{
-    display: flex;
-    padding: 0.5em;
-    justify-content: space-between;
+.tutoring-caption {
+  display: flex;
+  padding: 0.5em;
+  justify-content: space-between;
 }
 
 .tutoring-caption h3 {
-    font-family: 'Montserrat', 'sans-serif';
-    font-weight: 300;
-    margin: 0;
-    font-size: clamp(0.5rem, 2vw, 0.875rem);
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 300;
+  margin: 0;
+  font-size: clamp(0.5rem, 2vw, 0.875rem);
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
-@media screen and (max-width: 990px){
-   .Tutoring {
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-   }
+@media screen and (max-width: 990px) {
+  .Tutoring {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
 
-   .tutoring-info {
-        width: 80%;
-        text-align: center;
-   }
+  .tutoring-info {
+    width: 80%;
+    text-align: center;
+  }
 
-   .picture-container {
+  .picture-container {
     width: 70%;
-   }
+  }
 }
 
 strong {
-    position: relative;
-  
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: -0.125rem;
-      left: -0.5rem;
-      right: -0.5rem;
-      height: 0.75rem;
-  
-      // Position the line behind the text so that
-      // it is still easily readable
-      z-index: 0;
-  
-      // The SVG is added as an SVG background image
-      background-image: url('/underline.svg');
-      background-repeat: no-repeat;
-  
-      // This allows the SVG to flex in size to fit
-      // any length of word. If the word is short,
-      // the SVG will be stretched vertically, if it
-      // is long, the SVG will be stretched horizontally.
-      // The jagged nature of this particular SVG works
-      // with this transforming.
-      background-size: cover;
-    }
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -0.125rem;
+    left: -0.5rem;
+    right: -0.5rem;
+    height: 0.75rem;
+
+    // Position the line behind the text so that
+    // it is still easily readable
+    z-index: 0;
+
+    // The SVG is added as an SVG background image
+    background-image: url("/underline.svg");
+    background-repeat: no-repeat;
+
+    // This allows the SVG to flex in size to fit
+    // any length of word. If the word is short,
+    // the SVG will be stretched vertically, if it
+    // is long, the SVG will be stretched horizontally.
+    // The jagged nature of this particular SVG works
+    // with this transforming.
+    background-size: cover;
   }
-  
-  p > strong {
-    font-weight: 400;  
-  
-    &::after {
-      // Specific positioning for smaller text
-      bottom: -0.2rem;
-      height: 0.5rem;
-      left: -0.25rem;
-      right: -0.25rem;
-    }
+}
+
+p > strong {
+  font-weight: 400;
+
+  &::after {
+    // Specific positioning for smaller text
+    bottom: -0.2rem;
+    height: 0.5rem;
+    left: -0.25rem;
+    right: -0.25rem;
   }
+}

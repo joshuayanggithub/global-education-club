@@ -21,7 +21,7 @@
 }
 
 .reading-emph {
-  color: #6775B9;
+  color: #6775b9;
   display: inline;
 }
 
@@ -49,7 +49,7 @@
   display: flex;
   padding-top: 3rem;
   align-items: start;
-  width: 65%;
+  width: 60%;
 }
 
 .reading-pictures {
@@ -88,7 +88,8 @@
     width: 70%;
     text-align: center;
   }
-  .reading-info h2, .reading-info h3 {
+  .reading-info h2,
+  .reading-info h3 {
     margin: 1vh 0 1vh 0;
   }
   .zoom-container {
@@ -118,5 +119,5 @@
 }
 
 .bottom-curve .shape-fill {
-  fill: #FFFFFF;
-}/*# sourceMappingURL=Reading.css.map */
+  fill: #ffffff;
+}

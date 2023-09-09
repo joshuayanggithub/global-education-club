@@ -15,7 +15,12 @@
 }
 
 .wave .shape-fill {
-  fill: #FFFFFF;
+  fill: #ffffff;
+}
+
+.overview-links {
+  text-decoration: none;
+  color: black;
 }
 
 .overview {
@@ -25,7 +30,7 @@
   margin-top: 10vh;
   padding: 20vh 0;
   position: relative;
-  background-color: #D1F1D0;
+  background-color: #d2f5d0;
 }
 
 .plane {
@@ -133,7 +138,7 @@
     border-color: #a7aed2;
   }
   100% {
-    border-color: #6775B9;
+    border-color: #6775b9;
   }
 }
 .wave-bottom {
@@ -155,4 +160,4 @@
 
 .wave-bottom .shape-fill {
   fill: #ebf0ff;
-}/*# sourceMappingURL=Overview.css.map */
+}

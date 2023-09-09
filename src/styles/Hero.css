@@ -83,7 +83,7 @@
   text-transform: uppercase;
   font-weight: 800;
   font-size: clamp(0.5rem, 2vw, 2rem);
-  background-color: #D1F1D0;
+  background-color: #d1f1d0;
   border-radius: 2rem;
   border-color: transparent;
   text-align: center;
@@ -161,4 +161,4 @@
   100% {
     transform: translateY(0) rotate(0);
   }
-}/*# sourceMappingURL=Hero.css.map */
+}

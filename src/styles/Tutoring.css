@@ -12,6 +12,9 @@
   flex-direction: column;
   padding: 0.5em 2em;
 }
+.tutoring-info p b {
+  font-weight: 800;
+}
 
 .tutoring-info h1 {
   font-family: "Prata", "serif";
@@ -32,7 +35,7 @@
   font-family: "Montserrat", "sans-serif";
   font-size: clamp(0.65rem, 1.8vw, 1.5rem);
   font-weight: 700;
-  color: #6775B9;
+  color: #6775b9;
   text-transform: uppercase;
   margin: 1.5vh 0 1.5vh 0;
 }
@@ -112,4 +115,4 @@ p > strong::after {
   height: 0.5rem;
   left: -0.25rem;
   right: -0.25rem;
-}/*# sourceMappingURL=Tutoring.css.map */
+}

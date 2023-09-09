@@ -1,133 +1,133 @@
 $reading-margin: 1.5vh;
 
 .Reading {
-    display: flex;
-    justify-content: center;
-    background-color: #ebf0ff;
-    padding: 4rem 0 10rem 0;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #ebf0ff;
+  padding: 4rem 0 10rem 0;
+  position: relative;
 }
 
 .reading-info {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    padding: 0.5em 2em;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em 2em;
 }
 
 .reading-info h1 {
-    font-family: 'Prata', 'serif';
-    font-size: clamp(1rem,3vw,2.125rem);
-    font-weight: 700;
+  font-family: "Prata", "serif";
+  font-size: clamp(1rem, 3vw, 2.125rem);
+  font-weight: 700;
 
-    margin-bottom: $reading-margin;
+  margin-bottom: $reading-margin;
 }
 
 .reading-emph {
-    color: #6775B9;
-    display: inline;
+  color: #6775b9;
+  display: inline;
 }
 
 .reading-info h2 {
-    font-family: 'Montserrat', 'sans-serif';
-    font-size: clamp(0.65rem,1.8vw,1.5rem);
-    font-weight: 700;
-    font: bold;
-    color: #7dc07b;
+  font-family: "Montserrat", "sans-serif";
+  font-size: clamp(0.65rem, 1.8vw, 1.5rem);
+  font-weight: 700;
+  font: bold;
+  color: #7dc07b;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 
-    margin: $reading-margin 0 $reading-margin 0;
+  margin: $reading-margin 0 $reading-margin 0;
 }
 
 .reading-info p {
-    font-family: 'Montserrat', 'sans-serif';
-    font-size: clamp(0.5rem,1vw,0.875rem);
-    margin: $reading-margin 0 $reading-margin 0;
+  font-family: "Montserrat", "sans-serif";
+  font-size: clamp(0.5rem, 1vw, 0.875rem);
+  margin: $reading-margin 0 $reading-margin 0;
 }
 
 .library {
-    margin: $reading-margin 0 $reading-margin 0;
+  margin: $reading-margin 0 $reading-margin 0;
 }
 
 .zoom-container {
-    display: flex;
-    padding-top: 3rem;
-    align-items: start;
-    width: 65%;
+  display: flex;
+  padding-top: 3rem;
+  align-items: start;
+  width: 60%;
 }
 
 .reading-pictures {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.reading-pictures img{
-    border-radius: 50px;
+.reading-pictures img {
+  border-radius: 50px;
 }
 
-.reading-caption{
-    display: flex;
-    padding: 0.5em;
-    justify-content: space-between;
+.reading-caption {
+  display: flex;
+  padding: 0.5em;
+  justify-content: space-between;
 }
 
 .reading-caption h3 {
-    font-family: 'Montserrat', 'sans-serif';
-    font-weight: 300;
-    margin: 0;
-    font-size: clamp(0.5rem, 2vw, 0.875rem);
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 300;
+  margin: 0;
+  font-size: clamp(0.5rem, 2vw, 0.875rem);
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
-@media screen and (max-width: 990px){
-    .Reading {
-        flex-direction: column;
-        align-items: center;
-        padding-top: 5vh;
-        padding-bottom: 5vh;
-    }
- 
-    .reading-info {
-         width: 70%;
-         text-align: center;
-         h2,h3 {
-            margin: 1vh 0 1vh 0;
-         }
-    }
- 
-    .zoom-container {
-        text-align: center;
-        padding-top: 0.5rem;
-        width: 70%;
-    }
+@media screen and (max-width: 990px) {
+  .Reading {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
 
-    .library {
-        width: 50%;
-        margin: auto;
+  .reading-info {
+    width: 70%;
+    text-align: center;
+    h2,
+    h3 {
+      margin: 1vh 0 1vh 0;
     }
- }
- 
+  }
+
+  .zoom-container {
+    text-align: center;
+    padding-top: 0.5rem;
+    width: 70%;
+  }
+
+  .library {
+    width: 50%;
+    margin: auto;
+  }
+}
 
 .bottom-curve {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
 .bottom-curve svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 8vh;
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 8vh;
 }
 
 .bottom-curve .shape-fill {
-    fill: #FFFFFF;
+  fill: #ffffff;
 }
